@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64,linux/arm64 node:latest
+FROM node:latest
 
 ENV PORT=8080
 
