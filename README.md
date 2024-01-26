@@ -1,4 +1,4 @@
-# To run the docker container with resource limit as specified
+# To run the docker container with resource limit as specified and compatibility with x86 and ARM
 
 Clone this repository.
 
@@ -6,7 +6,7 @@ Clone this repository.
 
 The --memory and --cpus flags are used to set resource limits
 
-``` docker run --memory=1500m --cpus=2 headout-assignment ```
+``` docker run --memory=1500m --cpus=2 --platform=linux/arm64,linux/amd64 headout-assignment ```
 
 # Optimizations in the Assignment
 In my assignment, I made two significant optimizations to improve the efficiency of the application.
