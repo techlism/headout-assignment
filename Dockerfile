@@ -4,11 +4,11 @@ ENV PORT=8080
 
 WORKDIR /app
 
-RUN npm install
-
 COPY . .
 
 RUN mkdir txtfiles
+
+RUN npm install
 
 RUN node generateTxt.js
 
